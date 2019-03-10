@@ -1,5 +1,4 @@
-# Spring Boot Blog Demo
-
+# DEMO APP FOR CLOUBI
 
 
 ## Configuration
@@ -133,22 +132,3 @@ Tests can be run by executing following command from the root of the project:
 $ mvn test
 ```
 
-## Helper Tools
-
-### HAL REST Browser
-
-Go to the web browser and visit `http://localhost:8080/`
-
-You will need to be authenticated to be able to see this page.
-
-### H2 Database web interface
-
-Go to the web browser and visit `http://localhost:8080/h2-console`
-
-In field **JDBC URL** put 
-```
-jdbc:h2:mem:blog_simple_db
-```
-
-In `/src/main/resources/application.properties` file it is possible to change both
-web interface url path, as well as the datasource url.
