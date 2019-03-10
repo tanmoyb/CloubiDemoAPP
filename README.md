@@ -1,15 +1,5 @@
 # Spring Boot Blog Demo
 
-## About
-It was made using **Spring Boot**, **Spring Security**, **Thymeleaf**, **Spring Data JPA**, **Spring Data REST** and **Docker**. 
-Database is in memory **H2**.
-
-There is a login and registration functionality included.
-
-User has his own blog page, where he can add new blog posts. 
-Every authenticated user can comment on posts made by other users.
-Home page is paginated list of all posts.
-Non-authenticated users can see all blog posts, but cannot add new posts or comment.
 
 
 ## Configuration
