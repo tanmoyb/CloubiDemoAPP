@@ -31,13 +31,10 @@ There are several ways to run the application. You can run it from the command l
 
 Once the app starts, go to the web browser and visit `http://localhost:8080/home`
 
-Admin username: **admin**
-
-Admin password: **admin**
-
 User username: **user**
 
 User password: **password**
+
 
 ### Maven Wrapper
 
