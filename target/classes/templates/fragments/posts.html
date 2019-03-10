@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">></link>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/main.css}"
+          href="../../css/main.css"/>
+</head>
+<body>
+<div th:fragment="posts">
+    <div class="container">
+        <div class="row">
+            <a th:href="@{'/newPost'}" >
+                <button type="button" class="btn btn-secondary newPost" th:text="NewPost">New Post</button>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="starter-template panel" th:each="post : ${pager.posts}">
+                    <div class="panel-heading">
+                        <span><a th:text="${post.title}" th:href="@{'/post/' + ${post.id}}">Title</a></span>
+                        <div th:text="'Created: ' + ${#dates.format(post.createDate, 'dd-MMM-yyyy')} + ' by '">
+                            Created by
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="row">
+                        <div class="col">
+                            <a th:href="@{'/editPost/{id}'(id=${post.id})}" >
+                                <button type="button" class="btn btn-secondary viewPost" th:text="View">View</button>
+                            </a>
+                            <form action="#" th:action="@{'/post/{id}'(id=${post.id})}" th:method="delete">
+                                <div >
+                                    <input type="hidden" name="_method" value="delete"/>
+                                    <button type="submit" class="btn btn-secondary deletePost" th:text="Delete">Delete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

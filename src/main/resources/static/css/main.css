@@ -1,0 +1,87 @@
+h1 {
+    color: #0000FF;
+}
+
+h2 {
+    color: #FF0000;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.validation-message {
+    font-style: normal;
+    font-size: 10px;
+    color: #FF1C19;
+}
+
+a {
+    transition: all .2s;
+}
+
+a:hover, a:focus, a:active {
+    color: purple;
+    text-decoration: none;
+}
+
+.pagination {
+    display: block;
+    text-align: center;
+}
+
+.panel{
+    border: 1px solid black;
+}
+
+.newPost{
+    border: 1px solid black;
+    margin-bottom: 19px;
+    height: 42px;
+    width: 127px;
+    background-color: #ebf3f3;
+    border-radius: 7px;
+}
+
+.viewPost {
+    border: 1px solid black;
+    height: 34px;
+    width: 83px;
+    background: #ebf3f3;
+    border-radius: unset;
+    margin-bottom: 7px;
+    margin-left: 25px;
+}
+
+.deletePost {
+    border: 1px solid black;
+    height: 34px;
+    width: 83px;
+    background: #ebf3f3;
+    border-radius: unset;
+    margin-bottom: 7px;
+    margin-left: 25px;
+}
+.titleBody {
+    border: 1px solid black;
+    border-radius: unset;
+}
+.textBody {
+    border: 1px solid black;
+    border-radius: unset;
+    height: 172px;
+    margin-bottom: 20px
+}
+textarea.input-lg {
+    height: 170px;
+}
+
+.cancelPost {
+    border: 1px solid black;
+    height: 34px;
+    width: 83px;
+    background: #ebf3f3;
+    border-radius: unset;
+    margin-bottom: 7px;
+    margin-left: 9px;
+}
