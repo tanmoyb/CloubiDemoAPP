@@ -33,10 +33,10 @@ VALUES (3, 2);
 
 -- Posts
 INSERT INTO POST (post_id, user_id, title, body, create_date)
-VALUES (1, 1, 'Title 1',
+VALUES (1, 1, 'Example Blog Title ',
         '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
         --         CURRENT_TIMESTAMP());
-        {ts '2016-10-19 11:10:13.247'});
+        {ts '2019-3-10 11:10:13.247'});
 
 -- Comments
 INSERT INTO COMMENT (post_id, user_id, body, create_date)
